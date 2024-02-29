@@ -33,4 +33,4 @@ if __name__ == "__main__":
     df = add_empty_df()
     df = merge_data(df)
     df = clean_data(df)
-    df.to_csv("output/contacts.csv", index=False, encoding="utf-16", errors='ignore')
+    df.to_csv("output/contacts.csv", index=False, encoding="utf-8", errors='ignore')
