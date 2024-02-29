@@ -6,6 +6,7 @@ DELETE_THIS = ["Title", "Suffix", "Initials", "Web Page", "Gender", "Birthday", 
 def detect_encoding(file_path):
     with open(file_path, 'rb') as textfile:
         result = chardet.detect(textfile.read())
+        print(result['encoding'])
     return result['encoding']
 
 def add_empty_df():
@@ -28,9 +29,8 @@ def clean_data(df):
     df.drop_duplicates(inplace=True)
     return df
 
-    
 if __name__ == "__main__":
     df = add_empty_df()
     df = merge_data(df)
     df = clean_data(df)
-    df.to_csv("output/contacts.csv", index=False)
+    df.to_csv("output/contacts.csv", index=False, encoding="utf-16", errors='ignore')
