@@ -1,3 +1,12 @@
+"""
+Google2OutlookCSVFix - Fix Contacts CSV for Outlook
+
+Copyright (c) 2024 Pablo Ríos
+
+This script is part of the Google2OutlookCSVFix project, which is licensed under the MIT License.
+See the LICENSE file for details.
+"""
+
 import os, chardet
 import pandas as pd
 
