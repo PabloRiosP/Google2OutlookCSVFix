@@ -14,3 +14,6 @@ The fields that are kept are specified in `src/fix.py`. Modify this if you want 
 Sorry about my bad English :) and thank you for the feedback.
 
 This was a quick solution I created to address a specific issue with importing contacts for an enterprise migrating to Outlook. That's why it is simple and doesn't create the default `input` and `output` folders, for example.
+
+## License
+This project is licensed under the terms of the MIT license. See the [LICENSE](./LICENSE) file for details.
